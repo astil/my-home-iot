@@ -10,4 +10,5 @@ import no.home.iot.domain.Temperature;
 @Repository
 @RepositoryRestResource(collectionResourceRel = "moisture", path = "moisture")
 public interface MoistureRepository extends MongoRepository<Moisture, String> {
+    Moisture findFirstByOrderByTimestampDesc();
 }

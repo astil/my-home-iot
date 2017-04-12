@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="panel panel-default">
+
+        <div class="card">
+            <div class="card-block" style="border-bottom: 1px solid #dddddd">
+                <h1 class="card-text" style="font-family: 'Roboto', sans-serif;">{{temp}}</h1>
+            </div>
+            <div class="card-block">
+                <p class="card-text">Temperaturen i stua</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block" style="border-bottom: 1px solid #dddddd">
+                <h1 class="card-text" style="font-family: 'Roboto', sans-serif;">Fuktighet i potteplante</h1>
+            </div>
+            <div class="card-block">
+                <google-chart [data]="pieChartOptions"></google-chart>
+            </div>
+        </div>
+
+    </div>
+</div>

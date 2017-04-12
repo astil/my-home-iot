@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 @RepositoryRestResource(collectionResourceRel = "temp", path = "temp")
 public interface TemperatureRepository extends MongoRepository<Temperature, String> {
+    Temperature findFirstByOrderByTimestampDesc();
 }
